@@ -25,7 +25,7 @@ export const HeroContent = () => {
                     variants={slideInFromLeft(0.5)}
                     className='flex flex-col gap-6 mt-6 text-8xl font-bold text-white max-w-[1000px] w-auto h-auto'>
                     <span>
-                    Hello, I'm
+                    Hello! This is
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Mia</span>
                     . 
                     </span>
@@ -40,13 +40,13 @@ export const HeroContent = () => {
                 <motion.a
                     variants={slideInFromLeft(1)}
                     className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'>
-                    Contact me!
+                    Let's talk!
                 </motion.a>
             </div>
 
             <motion.div
                 variants={slideInFromRight(1.25)}
-                className='w-full h-full flex justify-center items-center'>
+                className='w-full h-full flex justify-right items-center'>
                     <Avatar src='/avatar.jpg' alt='work icons' size={450} />
             </motion.div>
         </motion.div>
