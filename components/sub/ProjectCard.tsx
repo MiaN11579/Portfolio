@@ -13,50 +13,48 @@ interface Props {
 }
 
 const ProjectCard = ({ src, title, description, href, index }: Props) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true
-  })
 
-  const imageVariants = {
-    hidden: {  y: 100, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        delay: 0.2,
-        duration: 0.5
-      },
-    }
-  }
-
-  const animationDelay = 0.2
+  const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      variants={imageVariants}
-      animate={inView ? "visible" : "hidden"}
-      custom={index}
-      transition={{ delay: index * animationDelay }}
+    <div className={`project-card ${isHovered ? 'hovered' : ''}  relative overflow-hidden shadow-lg`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='project-card relative overflow-hidden shadow-lg border border-[#2A0E61]'>
-        <a href={href} target="_blank">
-          <img
-            src={src}
-            alt={title}
-            width={1000}
-            height={1000}
-            className='w-full object-contain'
-          />
-
-          <div className='relative p-4'>
-            <h1 className='text-2xl font-semibold text-white'>{title}</h1>
-            <p className='pt-2 text-gray-300'>{description}</p>
+      <div>
+        <img
+          src={src}
+          alt={title}
+          width={1000}
+          height={1000}
+          className='w-full object-contain'
+        />
+        {isHovered && (
+          <div className='overlay'>
+            <div className='flex flex-col items-center justify-between w-full h-full py-[90px]'>
+              <div className='flex items-center justify-between w-full h-auto px-[200px]'>
+                <a href={href} target="_blank">
+                  <i className="fa-brands fa-square-github"></i>
+                </a>
+                <a href={href} target="_blank">
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <a href={href} target="_blank">
+                <div className='read-more-button px-[20px] py-[10px]'>
+                  <a href="#about-me" className='cursor-pointer'>Read more</a>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
+        )}
       </div>
-    </motion.div>
+
+      <div className='relative p-4'>
+        <h1 className='text-2xl font-semibold text-white'>{title}</h1>
+        <p className='pt-2 text-gray-300'>{description}</p>
+      </div>
+    </div>
   )
 }
 
