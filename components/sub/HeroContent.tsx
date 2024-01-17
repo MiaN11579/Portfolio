@@ -41,7 +41,7 @@ export const HeroContent = () => {
                     <motion.a
                         variants={slideInFromLeft(1)}
                         className='text lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl my-8 max-w-[1000px]'>
-                        Let's talk!
+                        Let&apos;s talk!
                     </motion.a>
                 </div>
 

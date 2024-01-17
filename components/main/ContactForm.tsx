@@ -58,7 +58,7 @@ const ContactForm = () => {
         variants={slideInFromTop(0.25)}
       >
         <h1 className='text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
-          Let's talk!
+          Let&apos;s talk!
         </h1>
       </motion.div>
       <form className="contact-form shadow-md rounded-md px-10 py-10 mb-20" onSubmit={handleSubmit}>
