@@ -26,7 +26,7 @@ const Projects = () => {
                 <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 z-[30] items-center'>
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Sdq8twxePco'
-                        github='https://github.com/david-dong828/COMP4300_Project'
+                        github=''
                         src="/shadebound.png"
                         title="Shadebound - Fantasy 2D Platformer"
                         description="An action-adventure game with fantasty theme made from scratch with C++ and SFML."
@@ -40,20 +40,13 @@ const Projects = () => {
                     />
                     <ProjectCard
                         link='https://genrify-app.herokuapp.com/'
-                        github=''
-                        src="/portfolio.png"
-                        title="Personal Portfolio Website"
-                        description="This website is made with Next.js, Tailwind CSS, and Framer Motion."
-                    />
-                </div>
-                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 py-10 z-[30] items-center'>
-                    <ProjectCard
-                        link='https://genrify-app.herokuapp.com/'
                         github='https://github.com/dchicasduena/genrify'
                         src="/genrify.png"
                         title="Genrify - Spotify Playlist Generator"
                         description="Spotify random playlist generator based on genres and sub-genres of music. Made with MongoDB, Node.js, Bootstrap, and Spotify API."
                     />
+                </div>
+                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 py-10 z-[30] items-center'>
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Z_p-ZlnlAR0'
                         github=''
@@ -67,6 +60,13 @@ const Projects = () => {
                         src="/owl_adventure.png"
                         title="Owlet's Adventure - 2D Platformer"
                         description="A simple platformer with pixel art style made with Godot. This is my first game project ever so it's not perfect, but I'm proud of it nonetheless!"
+                    />
+                    <ProjectCard
+                        link='https://mian11579.github.io/Library/'
+                        github='https://github.com/MiaN11579/Library'
+                        src="/library.png"
+                        title="Personal Library"
+                        description="A library web app that keeps track of books you read, made with HTML, CSS and JS. This is a project from The Odin Project's curriculum."
                     />
                 </div>
             </motion.div>
