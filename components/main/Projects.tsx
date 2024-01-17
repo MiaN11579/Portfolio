@@ -23,7 +23,7 @@ const Projects = () => {
                 variants={slideInFromTop(0.5)}
             >
 
-                <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10 z-[30] items-center'>
+                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 z-[30] items-center'>
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Sdq8twxePco'
                         github='https://github.com/david-dong828/COMP4300_Project'
@@ -46,7 +46,7 @@ const Projects = () => {
                         description="This website is made with Next.js, Tailwind CSS, and Framer Motion."
                     />
                 </div>
-                <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10 py-10 z-[30] items-center'>
+                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 py-10 z-[30] items-center'>
                     <ProjectCard
                         link='https://genrify-app.herokuapp.com/'
                         github='https://github.com/dchicasduena/genrify'

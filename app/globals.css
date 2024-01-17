@@ -69,6 +69,10 @@
   display: none;
 }
 
+.gap-1 {
+  gap: 0.4rem;
+}
+
 .page-padding {
   padding-left: 10rem;
   padding-right: 10rem;
@@ -212,7 +216,8 @@
   transform: scale(1);
   transition: transform 0.2s;
   height: auto;
-  width: 500px;
+  width: auto;
+  max-width: 500px;
 }
 
 .contact-input {
@@ -256,11 +261,11 @@
 
 @media screen and (max-width: 600px) {
   .page-padding {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .nav-button {
-    font-size: x-small;
+    font-size: 11px;
   }
   .avatar-wrapper {
     border-radius: 50%;
@@ -271,7 +276,7 @@
   }
   .fa-github, .fa-linkedin, .fa-envelope {
     color: #ffffff;
-    scale: 0.75;
+    scale: 0.8;
     transition: transform 0.4s ease-in-out;
   }
 }
