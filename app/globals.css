@@ -73,6 +73,10 @@
   gap: 0.4rem;
 }
 
+.rounded-xl {
+  border-radius: 1rem;
+}
+
 .page-padding {
   padding-left: 10rem;
   padding-right: 10rem;

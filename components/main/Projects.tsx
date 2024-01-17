@@ -52,7 +52,8 @@ const Projects = () => {
                         github=''
                         src="/starcraft.png"
                         title="Starcraft AI Bot"
-                        description="An AI bot that plays Starcraft 2. Made with C++ and BWAPI."
+                        description="A Terran bot that fights against the built-in StarCraft Broodwar Bot using a good general-purpose strategy
+                        and combat units. Made with BWAPI and C++."
                     />
                     <ProjectCard
                         link='https://walkerneo.itch.io/owlets-adventure'

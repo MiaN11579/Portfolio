@@ -55,7 +55,7 @@ function ContactForm({ }: Props) {
         animate={inView ? "visible" : "hidden"}
         variants={slideInFromBottom(0.25)}
         >
-        <form className="md:w-[500px] contact-form flex-wrap w-full shadow-md rounded-md px-10 py-10 mb-20" onSubmit={handleSubmit}>
+        <form className="md:w-[500px] contact-form flex-wrap w-full shadow-md rounded-md px-6 md:px-10 py-6 md:py-10 mb-20" onSubmit={handleSubmit}>
             <div className="mb-4">
                 <label htmlFor="fullName" className="block text-gray-200 font-semibold mb-2">Full Name</label>
                 <input
