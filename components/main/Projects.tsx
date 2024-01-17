@@ -36,7 +36,7 @@ const Projects = () => {
                         github='https://github.com/MiaN11579/COMP4768-Final-Project'
                         src="/calorX.jpg"
                         title="CalorX - Calorie Tracker App"
-                        description="A calorie tracker app made with Flutter and Firebase."
+                        description="A calorie tracker app made with Flutter, Firebase, and FoodData Central API."
                     />
                     <ProjectCard
                         link='https://genrify-app.herokuapp.com/'

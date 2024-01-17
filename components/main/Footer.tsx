@@ -7,8 +7,8 @@ export default function Footer({ }: Props) {
         <div className='w-full h-[120px] overflow-hidden bottom-0 shadow-lg shadow-lg shadow-[#2A0E61]/50 bg-[#0300145e] backdrop-blur-md z-50'>
             <div className='w-full h-full flex flex-col items-center justify-center'>
                 <div className='flex flex-row items-center justify-center mt-6'>
-                    <span className='text-gray-200 text-xs md:text-base'>
-                        © Copyright 2024. Made with <i className="fa-solid fa-heart"></i> by Mia Nguyen
+                    <span className='text-gray-200 md:text-base'>
+                        © Copyright 2024. Made with <i className="fa-solid fa-heart text-red-500"></i> by Mia Nguyen
                     </span>
                 </div>
                 <div className='w-[100px] md:w-[200px] h-full flex flex-row items-center justify-between'>
