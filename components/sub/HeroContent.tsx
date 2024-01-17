@@ -24,7 +24,7 @@ export const HeroContent = () => {
 
                     <motion.div
                         variants={slideInFromLeft(0.5)}
-                        className='flex flex-col gap-6 mt-6 sm:text-4xl md:text-7xl font-bold text-white max-w-[1000px] w-auto h-auto'>
+                        className='flex flex-col gap-6 mt-6 text-4xl md:text-7xl font-bold text-white max-w-[1000px] w-auto h-auto'>
                         <span>
                             Hello! My name is
                             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> Mia</span>
@@ -34,13 +34,13 @@ export const HeroContent = () => {
 
                     <motion.p
                         variants={slideInFromLeft(0.75)}
-                        className='text lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  sm:text-1xl md:text-4xl my-8 max-w-[1000px]'>
+                        className='text lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  text-1xl md:text-4xl my-8 max-w-[1000px]'>
                         A <span className='text-white'>Software Developer</span> who loves to solve <span className='text-white'>challenging problems</span> and work on <span className='text-white'>fun projects</span>.
                     </motion.p>
 
                     <motion.a
                         variants={slideInFromLeft(1)}
-                        className='text lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 sm:text-2xl md:text-2xl my-8 max-w-[1000px]'>
+                        className='text lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl md:text-2xl my-8 max-w-[1000px]'>
                         Let&apos;s talk!
                     </motion.a>
                 </div>

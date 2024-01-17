@@ -24,11 +24,11 @@ class Experience extends Component<Props, State> {
             >
                 <motion.h1
                     variants={slideInFromTop(0.25)}
-                    className='text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'
+                    className='text-[30px] md:text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'
                 >
                     My Experience
                 </motion.h1>
-                <div className='h-full w-full items-center justify-center flex flex-col gap-10 px-10 z-[30] '>
+                <div className='h-full w-full items-center justify-center flex flex-col gap-10 md:px-10 z-[30] '>
                     <motion.div
                         variants={slideInFromRight(0.5)}
                     >

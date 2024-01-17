@@ -24,20 +24,19 @@ const ExperienceCard = ({ title, company, location, date, description }: Props) 
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={slideInFromBottom(0.25)}
+      className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-10 py-10'
     >
-    <div className='experience-card relative overflow-hidden shadow-lg px-10 py-10'>
-      <div className='flex justify-between items-center '>
+      <div className='flex w-full justify-between items-center '>
         <div>
-          <h2 className='text-gray-200 text-xl font-semibold'>{title}</h2>
-          <p className='text-gray-200 italic'>{company}</p>
+          <h2 className='text-gray-200 text-l md:text-xl font-semibold'>{title}</h2>
+          <p className='text-gray-200 text-[15px] md:text-[17px] italic'>{company}</p>
         </div>
         <div>
-          <p className='text-gray-200 text-right'>{date}</p>
-          <p className='text-gray-200 text-right italic'>{location}</p>
+          <p className='text-gray-200 text-[15px] md:text-[17px] text-right'>{date}</p>
+          <p className='text-gray-200 text-[15px] md:text-[17px] text-right italic'>{location}</p>
         </div>
       </div>
-      <p className='mt-4 text-gray-400 whitespace-pre-wrap'>{description}</p>
-    </div>
+      <p className='mt-4 text-gray-400 text-[15px] md:text-[17px] whitespace-pre-wrap'>{description}</p>
     </motion.div>
   )
 }
