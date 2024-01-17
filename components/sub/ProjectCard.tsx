@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
@@ -32,9 +33,13 @@ const ProjectCard = ({ src, title, description, github, link }: Props) => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className='img-container'>
-          <img
+          <Image
             src={src}
             alt={title}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
           />
           {isHovered && (
             <div className='overlay'>
