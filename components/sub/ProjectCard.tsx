@@ -3,58 +3,68 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { slideInFromBottom } from '@/utils/motion'
 
 interface Props {
   src: string;
   title: string;
   description: string;
-  href: string;
-  index: number;
+  github: string;
+  link: string;
 }
 
-const ProjectCard = ({ src, title, description, href, index }: Props) => {
+const ProjectCard = ({ src, title, description, github, link }: Props) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true
+  })
 
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <div className={`project-card ${isHovered ? 'hovered' : ''}  relative overflow-hidden shadow-lg`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={slideInFromBottom(0.25)}
     >
-      <div>
-        <img
-          src={src}
-          alt={title}
-          width={1000}
-          height={1000}
-          className='w-full object-contain'
-        />
-        {isHovered && (
-          <div className='overlay'>
-            <div className='flex flex-col items-center justify-between w-full h-full py-[90px]'>
-              <div className='flex items-center justify-between w-full h-auto px-[200px]'>
-                <a href={href} target="_blank">
-                  <i className="fa-brands fa-square-github"></i>
-                </a>
-                <a href={href} target="_blank">
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-              <a href={href} target="_blank">
-                <div className='read-more-button px-[20px] py-[10px]'>
-                  <a href="#about-me" className='cursor-pointer'>Read more</a>
+      <div className={`project-card ${isHovered ? 'hovered' : ''}  relative overflow-hidden shadow-lg`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className='img-container'>
+          <img
+            src={src}
+            alt={title}
+          />
+          {isHovered && (
+            <div className='overlay'>
+              <div className='flex flex-col items-center justify-center w-full h-full'>
+                <div className='flex items-center justify-center w-full h-auto px-[200px]'>
+                  {github && (
+                    <a href={github} target="_blank">
+                      <i className="fa-brands fa-square-github"></i>
+                    </a>
+                  )}
+                  {link && (
+                    <a href={link} target="_blank">
+                      <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  )}
                 </div>
-              </a>
+                <div className='read-more-button px-[20px] py-[10px]'>
+                  <a href="/something" className='cursor-pointer'>Read more</a>
+                </div>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
 
-      <div className='relative p-4'>
-        <h1 className='text-2xl font-semibold text-white'>{title}</h1>
-        <p className='pt-2 text-gray-300'>{description}</p>
+        <div className='relative p-4'>
+          <h1 className='text-2xl font-semibold text-white'>{title}</h1>
+          <p className='pt-2 text-gray-300'>{description}</p>
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

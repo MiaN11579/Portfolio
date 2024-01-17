@@ -1,40 +1,43 @@
 "use client"
 
 import {
-  Backend_skill,
+  Language,
+  Database,
+  Framework,
   Frontend_skill,
-  Full_stack,
-  Other_skill,
-  Skill_data,
+  Game_engine,
+  Tool,
 } from "@/constants";
 import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
+import { slideInFromTop } from '@/utils/motion'
 import { motion } from 'framer-motion'
-import SkillText from "../sub/SkillText";
-import ProjectCard from "../sub/ProjectCard";
 
 const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20 z-40"
       style={{ transform: "scale(0.9" }}
     >
-    <motion.div
+      <motion.div
         initial='hidden'
         animate='visible'
         variants={slideInFromTop(0.25)}
-    >
-        <h1 className='text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
-            My Skills
+      >
+        <h1 className='text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
+          My Skills
         </h1>
-    </motion.div>
+      </motion.div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Skill_data.map((image, index) => (
+      <h1 className='text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+        Programming Languages
+      </h1>
+      <div className="flex flex-row justify-between flex-wrap gap-10 items-center">
+        {Language.map((image, index) => (
           <SkillDataProvider
             key={index}
+            name={image.skill_name}
             src={image.Image}
             width={image.width}
             height={image.height}
@@ -42,25 +45,14 @@ const Skills = () => {
           />
         ))}
       </div>
-
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <h1 className='text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+        Web Development
+      </h1>
+      <div className="flex flex-row justify-between flex-wrap gap-10 items-center">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
-            src={image.Image}
-            // title={"asd"}
-            // description={"asd"}
-            // href="asd"
-            width={image.width}
-            height={image.height}
-            index={index}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Backend_skill.map((image, index) => (
-          <SkillDataProvider
-            key={index}
+            name={image.skill_name}
             src={image.Image}
             width={image.width}
             height={image.height}
@@ -68,10 +60,14 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Full_stack.map((image, index) => (
+      <h1 className='text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+        Frameworks
+      </h1>
+      <div className="flex flex-row justify-between flex-wrap gap-10 items-center">
+        {Framework.map((image, index) => (
           <SkillDataProvider
             key={index}
+            name={image.skill_name}
             src={image.Image}
             width={image.width}
             height={image.height}
@@ -79,10 +75,44 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Other_skill.map((image, index) => (
+      <h1 className='text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+        Game Engines
+      </h1>
+      <div className="flex flex-row justify-between flex-wrap gap-10 items-center">
+        {Game_engine.map((image, index) => (
           <SkillDataProvider
             key={index}
+            name={image.skill_name}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
+      </div>
+      <h1 className='text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+        Databases
+      </h1>
+      <div className="flex flex-row justify-between flex-wrap gap-10 items-center">
+        {Database.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            name={image.skill_name}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
+      </div>
+      <h1 className='text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+        Developer Tools
+      </h1>
+      <div className="flex flex-row justify-between flex-wrap gap-10 items-center">
+        {Tool.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            name={image.skill_name}
             src={image.Image}
             width={image.width}
             height={image.height}

@@ -88,28 +88,30 @@
   --tw-gradient-to: #313aa5 var(--tw-gradient-to-position);
 }
 
+.img-container{
+  display: inline-block;
+  position: relative;
+}
+
 .experience-card{
   background-color: #09054993;
   border-radius: 2rem;
-  /* border: 2px solid #fff; */
-  height: 200px;
+  height: auto;
   width: 1000px;
-  /* backdrop-filter: blur(1px); */
 }
 
 .project-card{
   background-color: #00000053;
   border-radius: 2rem;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   transform: scale(1);
   transition: transform 0.2s;
   height: 450px;
-  /* backdrop-filter: blur(1px); */
 }
 
 .project-card:hover {
   border: 2px solid #06b6d4;
-  transform: scale(1.08);
+  transform: scale(1.05);
   transition: transform 0.2s;
 }
 
@@ -131,9 +133,9 @@
   justify-content: right;
 }
 
-.py-\[90px\]{
-  padding-top: 90px;
-  padding-bottom: 90px;
+.py-\[88px\]{
+  padding-top: 20%;
+  padding-bottom: 18%;
 }
 
 .nav-button {
@@ -148,6 +150,9 @@
 }
 
 .read-more-button {
+  margin-top: 20px;
+  color: #06b6d4;
+  font-weight: 500;
   background-color: #ffffff;
   border-radius: 1rem;
   transition: transform 0.1s ease-in-out;
@@ -171,7 +176,7 @@
 }
 
 .fa-chevron-down {
-  color: #ffffff;
+  color: #06b6d4;
   scale: 3;
 }
 
@@ -179,6 +184,7 @@
   color: #ffffff;
   scale: 2.6;
   transition: transform 0.2s ease-in-out;
+  margin-right: 40px;
 }
 
 .fa-arrow-up-right-from-square {
@@ -195,28 +201,64 @@
 .overlay {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 59%;
+  height: 100%;
   background: #00000088;
   transition: background 0.3s ease-in-out;
+}
+
+.skill-box {
+  width: 120px;
+  height: 120px;
+}
+
+.contact-form {
+  background-color: #00000053;
+  border-radius: 2rem;
+  /* border: 2px solid #fff; */
+  transform: scale(1);
+  transition: transform 0.2s;
+  height: auto;
+  width: 500px;
+}
+
+.contact-input {
+  background-color: #00000053;
+  color: #fff;
+  border-radius: 1rem;
+  /* border: 1px solid #06b6d4; */
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+.contact-input:valid {
+  border: 1px solid #06b6d4;
+}
+
+.contact-input:focus, contact-input.form-control:focus {
+  border: 1px solid #0655d4;
 }
 
 @keyframes fadeAnimation {
   0% {
     opacity: 1;
+    color: #06b6d4;
   }
   25% {
     opacity: 0.75;
+    color: #0682d4;
   }
   50% {
     opacity: 0.5;
+    color: #556df7;
   }
   75% {
     opacity: 0.25;
+    color: #5855f7;
   }
   100% {
     opacity: 0;
+    color: #a855f7;
   }
 }
 

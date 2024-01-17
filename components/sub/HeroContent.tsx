@@ -48,7 +48,7 @@ export const HeroContent = () => {
                 <motion.div
                     variants={slideInFromRight(1.25)}
                     className='w-full h-full flex justify-center items-center'>
-                    <Avatar src='/avatar2.jpg' alt='work icons' size={450} />
+                    <Avatar src='/avatar.jpg' alt='work icons' size={450} />
                 </motion.div>
             </motion.div>
 

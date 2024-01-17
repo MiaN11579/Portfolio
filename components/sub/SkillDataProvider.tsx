@@ -7,12 +7,13 @@ import Image from 'next/image';
 
 interface Props {
     src: string;
+    name: string;
     width: number;
     height: number;
     index: number;
 }
 
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, name, width, height, index }: Props) => {
     const { ref, inView } = useInView({
         triggerOnce: true
     })
@@ -22,7 +23,7 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
         visible: { opacity: 1 }
     }
 
-    const animationDelay = 0.3
+    const animationDelay = 0.2
     return (
         <motion.div
             ref={ref}
@@ -31,13 +32,18 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
             animate={inView ? "visible" : "hidden"}
             custom={index}
             transition={{ delay: index * animationDelay }}
+            className='flex justify-between w-auto h-full '
         >
-            <Image
-                src={src}
-                width={width}
-                height={height}
-                alt='skill image'
-            />
+            <div className='skill-box flex flex-col items-center justify-between'>
+
+                <Image
+                    src={src}
+                    width={width}
+                    height={height}
+                    alt='skill image'
+                />
+                <p className='text-gray-200 font-semibold'>{name}</p>
+            </div>
         </motion.div>
     )
 }
