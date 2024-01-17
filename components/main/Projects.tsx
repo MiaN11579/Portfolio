@@ -65,7 +65,7 @@ const Projects = () => {
                         link='https://walkerneo.itch.io/owlets-adventure'
                         github='https://github.com/MiaN11579/Owlet-Adventure'
                         src="/owl_adventure.png"
-                        title="Owlet's Adventure - 2D Platformer Game"
+                        title="Owlet's Adventure - 2D Platformer"
                         description="A simple platformer with pixel art style made with Godot. This is my first game project ever so it's not perfect, but I'm proud of it nonetheless!"
                     />
                 </div>
