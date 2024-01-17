@@ -33,7 +33,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
         Programming Languages
       </h1>
-      <div className="flex flex-row justify-between flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
         {Language.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -48,7 +48,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
         Web Development
       </h1>
-      <div className="flex flex-row justify-between flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -63,7 +63,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
         Frameworks
       </h1>
-      <div className="flex flex-row justify-between flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
         {Framework.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -78,7 +78,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
         Game Engines
       </h1>
-      <div className="flex flex-row justify-between flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
         {Game_engine.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -93,7 +93,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
         Databases
       </h1>
-      <div className="flex flex-row justify-between flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
         {Database.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -108,7 +108,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
         Developer Tools
       </h1>
-      <div className="flex flex-row justify-between flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
         {Tool.map((image, index) => (
           <SkillDataProvider
             key={index}
