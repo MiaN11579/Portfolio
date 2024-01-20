@@ -2,7 +2,7 @@
 
 import { Genrify } from "@/constants";
 import React from "react";
-import { slideInFromTop, slideInFromBottom } from '@/utils/motion'
+import { slideInFromTop, slideInFromBottom, slideInFromLeft } from '@/utils/motion'
 import { motion } from 'framer-motion'
 import SkillDataProvider from "@/components/sub/SkillDataProvider";
 
@@ -11,7 +11,7 @@ type Props = {}
 export default function genrify({ }: Props) {
   const BOXWIDTH = 100;
   const BOXHEIGHT = 90;
-  
+
   return (
     <div>
       <div className='flex flex-col relative items-center justify-center page-padding z-40'>
@@ -20,7 +20,7 @@ export default function genrify({ }: Props) {
           animate='visible'
           variants={slideInFromTop(0.25)}
         >
-          <h1 className='text-[30px] md:text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pt-20 pb-10'>
+          <h1 className='text-[30px] md:text-[50px] lg:text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pt-20 pb-10'>
             Genrify
           </h1>
         </motion.div>
@@ -37,7 +37,7 @@ export default function genrify({ }: Props) {
           </p>
         </motion.div>
 
-        <div className="flex flex-row justify-center flex-wrap items-center mb-20">
+        <div className="flex flex-row justify-center flex-wrap items-center">
           {Genrify.map((image, index) => (
             <SkillDataProvider
               key={index}
@@ -51,6 +51,13 @@ export default function genrify({ }: Props) {
             />
           ))}
         </div>
+
+        <motion.p
+          variants={slideInFromLeft(0.75)}
+          className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] mb-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper auctor placerat. Suspendisse maximus sem ac purus rhoncus, ac lacinia felis faucibus. Donec vel dapibus sem. Sed sit amet nulla lectus. Nam eget neque sit amet augue elementum pretium ac vel augue. Donec maximus fermentum porttitor. Nulla non aliquam velit, rhoncus pretium libero. Nam vel ex eros.
+
+          Aliquam nec mi scelerisque, feugiat mauris ultrices, commodo tellus. Mauris at sapien ultricies, aliquam velit sit amet, aliquam ex. Mauris tempor, libero vel venenatis placerat, libero nibh lobortis nisi, vitae placerat nisl quam at sapien. Aenean leo orci, tristique a vulputate in, bibendum quis arcu. Maecenas luctus finibus magna. Aenean scelerisque feugiat enim ac auctor. Donec sit amet quam id dolor euismod fermentum a eget justo. Duis finibus mi non gravida aliquet. Suspendisse id lobortis enim, quis molestie sapien. Sed cursus erat non dui porttitor varius. Nulla rutrum felis nec lorem rhoncus porttitor.
+        </motion.p>
       </div>
     </div>
   )

@@ -66,8 +66,8 @@ const ProjectCard = ({ src, title, description, github, link, readmore }: Props)
         </div>
 
         <div className='p-4'>
-          <h1 className='text-2xl font-semibold text-white'>{title}</h1>
-          <p className='pt-2 text-gray-300'>{description}</p>
+          <h1 className='text-1xl md:text-2xl lg:text-4xl font-semibold text-white'>{title}</h1>
+          <p className='lg:text-2xl pt-2 text-gray-300'>{description}</p>
         </div>
       </div>
     </motion.div>

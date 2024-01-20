@@ -15,7 +15,7 @@ const Projects = () => {
             <motion.div
                 variants={slideInFromTop(0.25)}
             >
-                <h1 className='text-[30px] md:text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
+                <h1 className='text-[30px] md:text-[50px] lg:text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
                     My Projects
                 </h1>
             </motion.div>
@@ -23,7 +23,7 @@ const Projects = () => {
                 variants={slideInFromTop(0.5)}
             >
 
-                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 z-[30] items-center'>
+                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 z-[30]'>
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Sdq8twxePco'
                         github=''
@@ -49,7 +49,7 @@ const Projects = () => {
                         description="Spotify random playlist generator based on genres and sub-genres of music. Made with MongoDB, Node.js, Bootstrap, and Spotify API."
                     />
                 </div>
-                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 py-10 z-[30] items-center'>
+                <div className='h-full w-full flex flex-col md:flex-row gap-10 md:px-10 py-10 z-[30]'>
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Z_p-ZlnlAR0'
                         github=''

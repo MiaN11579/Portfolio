@@ -65,49 +65,46 @@ function ContactForm({ }: Props) {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={slideInFromBottom(0.25)}
+            className='relative w-full flex justify-center items-center md:px-10 z-[40]'
         >
-            <form className="relative grow overflow-hidden contact-form shadow-md px-6 md:px-10 py-6 md:py-10 mb-20 md:w-[600px]" onSubmit={handleSubmit}>
-                <div className="grow mb-4">
-                    <label htmlFor="fullName" className="block text-gray-200 font-semibold mb-2">Full Name</label>
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        value={fullName}
-                        onChange={(e) => setFullName(e.target.value)}
-                        className="contact-input w-full p-2"
-                        required
-                    />
+            <form className="w-full overflow-hidden contact-form shadow-md px-6 md:px-10 py-6 md:py-10 mb-20 " onSubmit={handleSubmit}>
+                <label htmlFor="fullName" className="block text-gray-200 font-semibold mb-4">Full Name</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    className="contact-input w-full p-2"
+                    required
+                />
+                <label htmlFor="email" className="block text-gray-200 font-semibold mb-4">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="contact-input w-full p-2"
+                    required
+                />
+                <label htmlFor="message" className="block text-gray-200 font-semibold mb-4">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    rows={5}
+                    className="contact-input w-full p-2 mb-2"
+                    required
+                />
+                <div className='flex justify-center'>
+                    <button
+                        type="submit"
+                        className="button-primary bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-xl">
+                        {submitting ? 'Submitting...' : 'Submit'}
+                    </button>
                 </div>
-                <div className="grow mb-4">
-                    <label htmlFor="email" className="block text-gray-200 font-semibold mb-2">Email Address</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="contact-input w-full p-2"
-                        required
-                    />
-                </div>
-                <div className="grow mb-4">
-                    <label htmlFor="message" className="block text-gray-200 font-semibold mb-2">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        rows={4}
-                        className="contact-input w-full p-2 mb-2"
-                        required
-                    />
-                </div>
-                <button
-                    type="submit"
-                    className="button-primary bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-xl">
-                    {submitting ? 'Submitting...' : 'Submit'}
-                </button>
             </form>
 
             {/* Toast container for notifications */}

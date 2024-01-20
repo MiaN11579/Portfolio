@@ -16,7 +16,7 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const BOXWIDTH = 120;
   const BOXHEIGHT = 120;
-  
+
   return (
     <section
       id="skills"
@@ -28,15 +28,15 @@ const Skills = () => {
         animate='visible'
         variants={slideInFromTop(0.25)}
       >
-        <h1 className='text-[30px] md:text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
+        <h1 className='text-[30px] md:text-[50px] lg:text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
           My Skills
         </h1>
       </motion.div>
 
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
+      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Programming Languages
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
         {Language.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -50,10 +50,10 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
+      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Web Development
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -67,10 +67,10 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
+      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Frameworks
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
         {Framework.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -84,10 +84,10 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
+      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Databases
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
         {Database.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -101,10 +101,10 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
+      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Game Engines
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
         {Game_engine.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -118,10 +118,10 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
+      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Developer Tools
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
         {Tool.map((image, index) => (
           <SkillDataProvider
             key={index}

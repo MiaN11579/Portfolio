@@ -24,33 +24,25 @@ class Experience extends Component<Props, State> {
             >
                 <motion.h1
                     variants={slideInFromTop(0.25)}
-                    className='text-[30px] md:text-[50px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'
+                    className='text-[30px] md:text-[50px] lg:text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'
                 >
                     My Experience
                 </motion.h1>
                 <div className='h-full w-full items-center justify-center flex flex-col gap-10 md:px-10 z-[30] '>
-                    <motion.div
-                        variants={slideInFromRight(0.5)}
-                    >
-                        <ExperienceCard
-                            title='Contract WordPress Developer'
-                            company='Frankensolar Americas Inc.'
-                            date='July 2023 – August 2023'
-                            location=' Brampton, ON'
-                            description={Frankensolar}
-                        />
-                    </motion.div>
-                    <motion.div
-                        variants={slideInFromRight(0.5)}
-                    >
-                        <ExperienceCard
-                            title='Game Developer Work Term Student'
-                            company='Zorbit’s Math Adventure'
-                            date='May 2022 – April 2023'
-                            location=' St. John’s, NL'
-                            description={Zorbit}
-                        />
-                    </motion.div>
+                    <ExperienceCard
+                        title='Contract WordPress Developer'
+                        company='Frankensolar Americas Inc.'
+                        date='July 2023 – August 2023'
+                        location=' Brampton, ON'
+                        description={Frankensolar}
+                    />
+                    <ExperienceCard
+                        title='Game Developer Work Term Student'
+                        company='Zorbit’s Math Adventure'
+                        date='May 2022 – April 2023'
+                        location=' St. John’s, NL'
+                        description={Zorbit}
+                    />
                 </div>
             </motion.div>
         )
