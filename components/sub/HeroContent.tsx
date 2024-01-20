@@ -46,7 +46,7 @@ export const HeroContent = () => {
                         variants={slideInFromLeft(1)}
                         className='flex justify-center md:justify-between'>
                         <button
-                            className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white py-4 px-6 mb-10 rounded-xl text-[20px]"
+                            className="button-primary bg-gradient-to-r from-purple-500 to-cyan-500 text-white mb-10 rounded-xl text-[20px]"
                             onClick={handleButtonClick}>
                             {'Resume'}
                         </button>

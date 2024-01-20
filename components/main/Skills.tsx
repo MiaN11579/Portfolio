@@ -14,11 +14,14 @@ import { slideInFromTop } from '@/utils/motion'
 import { motion } from 'framer-motion'
 
 const Skills = () => {
+  const BOXWIDTH = 120;
+  const BOXHEIGHT = 120;
+  
   return (
     <section
       id="skills"
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20 z-40"
-      style={{ transform: "scale(0.9" }}
+      style={{ transform: "scale(0.9)" }}
     >
       <motion.div
         initial='hidden'
@@ -42,6 +45,8 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            boxWidth={BOXWIDTH}
+            boxHeight={BOXHEIGHT}
           />
         ))}
       </div>
@@ -57,6 +62,8 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            boxWidth={BOXWIDTH}
+            boxHeight={BOXHEIGHT}
           />
         ))}
       </div>
@@ -72,6 +79,8 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            boxWidth={BOXWIDTH}
+            boxHeight={BOXHEIGHT}
           />
         ))}
       </div>
@@ -87,6 +96,8 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            boxWidth={BOXWIDTH}
+            boxHeight={BOXHEIGHT}
           />
         ))}
       </div>
@@ -102,6 +113,8 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            boxWidth={BOXWIDTH}
+            boxHeight={BOXHEIGHT}
           />
         ))}
       </div>
@@ -117,6 +130,8 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            boxWidth={BOXWIDTH}
+            boxHeight={BOXHEIGHT}
           />
         ))}
       </div>

@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { slideInFromBottom, slideInFromTop } from '@/utils/motion'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 type Props = {}
 
@@ -20,9 +22,6 @@ function ContactForm({ }: Props) {
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         setSubmitting(true);
-        // Add your form submission logic here
-        console.log('Form submitted:', { fullName, email, message });
-        // You can send the form data to your server or perform other actions
 
         try {
             const response = await fetch('/api/submit', {
@@ -34,11 +33,23 @@ function ContactForm({ }: Props) {
             });
 
             if (response.ok) {
-                console.log('Form submitted successfully!');
-                // Handle any success actions or UI updates here
+                // Clear form fields
+                setFullName('');
+                setEmail('');
+                setMessage('');
+
+                // Show success notification
+                toast.success('Form submitted successfully!', {
+                    className: "toast-position",
+                    position: 'top-right',
+                    autoClose: 3000, // Notification will close after 3 seconds
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                });
             } else {
                 console.error('Error submitting form:', response.statusText);
-                // Handle any error actions or UI updates here
             }
         } catch (error) {
             console.error('Error submitting form:', error);
@@ -94,10 +105,13 @@ function ContactForm({ }: Props) {
                 </div>
                 <button
                     type="submit"
-                    className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white py-2 px-4 rounded-md">
+                    className="button-primary bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-xl">
                     {submitting ? 'Submitting...' : 'Submit'}
                 </button>
             </form>
+
+            {/* Toast container for notifications */}
+            <ToastContainer toastStyle={{ backgroundColor: "#2B3051", color: "white" }} />
         </motion.div>
     );
 };

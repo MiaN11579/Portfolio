@@ -11,9 +11,11 @@ interface Props {
     width: number;
     height: number;
     index: number;
+    boxWidth: number;
+    boxHeight: number;
 }
 
-const SkillDataProvider = ({ src, name, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, name, width, height, index, boxWidth, boxHeight }: Props) => {
     const { ref, inView } = useInView({
         triggerOnce: true
     })
@@ -32,9 +34,9 @@ const SkillDataProvider = ({ src, name, width, height, index }: Props) => {
             animate={inView ? "visible" : "hidden"}
             custom={index}
             transition={{ delay: index * animationDelay }}
-            className='flex justify-between w-auto h-full '
+            className='flex justify-between w-auto h-full'
         >
-            <div className='skill-box flex flex-col items-center justify-between'>
+            <div className='flex flex-col items-center justify-between' style={{ width: boxWidth, height: boxHeight }}>
 
                 <Image
                     src={src}

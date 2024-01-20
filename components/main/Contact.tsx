@@ -1,10 +1,6 @@
 // components/ContactForm.js
 "use client"
 
-import React, { useState } from 'react';
-import { slideInFromBottom, slideInFromTop } from '@/utils/motion'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import ContactForm from '../sub/ContactForm';
 
 
