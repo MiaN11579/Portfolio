@@ -105,7 +105,7 @@
   background-color: #09054993;
   border-radius: 2rem;
   height: auto;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .project-card{
@@ -113,7 +113,8 @@
   border-radius: 2rem;
   transform: scale(1);
   transition: transform 0.2s;
-  height: 450px;
+  height: auto;
+  min-height: 450px;
 }
 
 .project-card:hover {
@@ -218,10 +219,9 @@
   background-color: #00000053;
   border-radius: 2rem;
   transform: scale(1);
-  transition: transform 0.2s;
   height: auto;
-  width: auto;
-  max-width: 500px;
+  /* width: 100%; */
+  max-width: 1000px;
 }
 
 .contact-input {

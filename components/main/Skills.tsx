@@ -30,7 +30,7 @@ const Skills = () => {
         </h1>
       </motion.div>
 
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
         Programming Languages
       </h1>
       <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
@@ -45,7 +45,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
         Web Development
       </h1>
       <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
@@ -60,7 +60,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
         Frameworks
       </h1>
       <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
@@ -75,22 +75,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
-        Game Engines
-      </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
-        {Game_engine.map((image, index) => (
-          <SkillDataProvider
-            key={index}
-            name={image.skill_name}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-          />
-        ))}
-      </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
         Databases
       </h1>
       <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
@@ -105,7 +90,22 @@ const Skills = () => {
           />
         ))}
       </div>
-      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-4'>
+      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-6'>
+        Game Engines
+      </h1>
+      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">
+        {Game_engine.map((image, index) => (
+          <SkillDataProvider
+            key={index}
+            name={image.skill_name}
+            src={image.Image}
+            width={image.width}
+            height={image.height}
+            index={index}
+          />
+        ))}
+      </div>
+      <h1 className='text-[20px] md:text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Developer Tools
       </h1>
       <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center">

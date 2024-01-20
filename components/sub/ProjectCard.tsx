@@ -12,9 +12,10 @@ interface Props {
   description: string;
   github: string;
   link: string;
+  readmore: string;
 }
 
-const ProjectCard = ({ src, title, description, github, link }: Props) => {
+const ProjectCard = ({ src, title, description, github, link, readmore }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true
   })
@@ -39,7 +40,7 @@ const ProjectCard = ({ src, title, description, github, link }: Props) => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: '100%'}}
           />
           {isHovered && (
             <div className='overlay'>
@@ -57,14 +58,14 @@ const ProjectCard = ({ src, title, description, github, link }: Props) => {
                   )}
                 </div>
                 <div className='read-more-button px-[20px] py-[10px]'>
-                  <a href="/something" className='cursor-pointer'>Read more</a>
+                  <a href={readmore} className='cursor-pointer'>Read more</a>
                 </div>
               </div>
             </div>
           )}
         </div>
 
-        <div className='relative p-4'>
+        <div className='p-4'>
           <h1 className='text-2xl font-semibold text-white'>{title}</h1>
           <p className='pt-2 text-gray-300'>{description}</p>
         </div>

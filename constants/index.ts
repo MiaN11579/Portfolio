@@ -62,23 +62,6 @@ export const Skill_data = [
   
   ];
   
-  export const Socials = [
-    {
-      name: "Instagram",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Discord",
-      src: "/discord.svg",
-    },
-  ];
-  
-  
-  
   export const Frontend_skill = [
     {
       skill_name: "Html 5",
@@ -93,16 +76,10 @@ export const Skill_data = [
       height: 105,
     },
     {
-      skill_name: "JavaScript",
-      Image: "/js.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "React",
-      Image: "/react.png",
-      width: 80,
-      height: 80,
+      skill_name: "TypeScript",
+      Image: "/ts.png",
+      width: 75,
+      height: 75,
     },
     {
       skill_name: "Framer Motion",
@@ -150,11 +127,17 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "R",
-      Image: "/r.png",
-      width: 100,
-      height: 100,
-    }
+      skill_name: "JavaScript",
+      Image: "/js.png",
+      width: 75,
+      height: 75,
+    },
+    // {
+    //   skill_name: "R",
+    //   Image: "/r.png",
+    //   width: 100,
+    //   height: 100,
+    // }
   ];
   
   export const Framework = [
@@ -194,12 +177,6 @@ export const Skill_data = [
     {
       skill_name: "Unity",
       Image: "/unity.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Unreal Engine",
-      Image: "/unreal.png",
       width: 80,
       height: 80,
     }

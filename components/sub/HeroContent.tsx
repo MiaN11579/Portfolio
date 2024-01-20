@@ -7,6 +7,10 @@ import { SparklesIcon } from '@heroicons/react/24/solid'
 import Avatar from '../main/Avatar';
 
 export const HeroContent = () => {
+    const handleButtonClick = () => {
+        window.open('resume.pdf', '_blank');
+    };
+
     return (
         <div>
             <motion.div
@@ -41,9 +45,11 @@ export const HeroContent = () => {
                     <motion.a
                         variants={slideInFromLeft(1)}
                         className='flex justify-center md:justify-between'>
-                        <a href="">
-                            <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white py-4 px-6 mb-10 rounded-xl text-[20px]">{'Resume'}</button>
-                        </a>
+                        <button
+                            className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white py-4 px-6 mb-10 rounded-xl text-[20px]"
+                            onClick={handleButtonClick}>
+                            {'Resume'}
+                        </button>
                     </motion.a>
                 </div>
 

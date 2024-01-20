@@ -25,7 +25,7 @@ function ContactForm({ }: Props) {
         // You can send the form data to your server or perform other actions
 
         try {
-            const response = await fetch('/api/submitForm', {
+            const response = await fetch('/api/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -50,50 +50,54 @@ function ContactForm({ }: Props) {
 
     return (
         <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        variants={slideInFromBottom(0.25)}
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={slideInFromBottom(0.25)}
         >
-        <form className="md:w-[500px] contact-form flex-wrap w-full shadow-md rounded-md px-6 md:px-10 py-6 md:py-10 mb-20" onSubmit={handleSubmit}>
-            <div className="mb-4">
-                <label htmlFor="fullName" className="block text-gray-200 font-semibold mb-2">Full Name</label>
-                <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    value={fullName}
-                    onChange={(e) => setFullName(e.target.value)}
-                    className="contact-input w-full p-2"
-                    required
-                />
-            </div>
-            <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-200 font-semibold mb-2">Email Address</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="contact-input w-full p-2"
-                    required
-                />
-            </div>
-            <div className="mb-4">
-                <label htmlFor="message" className="block text-gray-200 font-semibold mb-2">Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    rows={4}
-                    className="contact-input w-full p-2 mb-2"
-                    required
-                />
-            </div>
-            <button type="submit" className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white py-2 px-4 rounded-md">{submitting ? 'Submitting...' : 'Submit'}</button>
-        </form>
+            <form className="relative grow overflow-hidden contact-form shadow-md px-6 md:px-10 py-6 md:py-10 mb-20 md:w-[600px]" onSubmit={handleSubmit}>
+                <div className="grow mb-4">
+                    <label htmlFor="fullName" className="block text-gray-200 font-semibold mb-2">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        value={fullName}
+                        onChange={(e) => setFullName(e.target.value)}
+                        className="contact-input w-full p-2"
+                        required
+                    />
+                </div>
+                <div className="grow mb-4">
+                    <label htmlFor="email" className="block text-gray-200 font-semibold mb-2">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="contact-input w-full p-2"
+                        required
+                    />
+                </div>
+                <div className="grow mb-4">
+                    <label htmlFor="message" className="block text-gray-200 font-semibold mb-2">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        rows={4}
+                        className="contact-input w-full p-2 mb-2"
+                        required
+                    />
+                </div>
+                <button
+                    type="submit"
+                    className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white py-2 px-4 rounded-md">
+                    {submitting ? 'Submitting...' : 'Submit'}
+                </button>
+            </form>
         </motion.div>
     );
 };
