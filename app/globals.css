@@ -72,6 +72,12 @@
   padding-right: 10rem;
 }
 
+.project-padding {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  min-height: 100vh;
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }

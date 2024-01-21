@@ -34,7 +34,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=549-b2WlWQA'
-                        github='https://github.com/MiaN11579/COMP4768-Final-Project'
+                        github='https://github.com/MiaN11579/CalorX'
                         readmore='/projects/calorx'
                         src="/calorX.jpg"
                         title="CalorX - Calorie Tracker App"

@@ -44,7 +44,7 @@ const SkillDataProvider = ({ src, name, width, height, index, boxWidth, boxHeigh
                     height={height}
                     alt='skill image'
                 />
-                <p className='text-gray-200 font-semibold'>{name}</p>
+                <p className='lg:text-[18px] text-gray-200 font-semibold'>{name}</p>
             </div>
         </motion.div>
     )

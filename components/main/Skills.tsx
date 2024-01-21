@@ -14,7 +14,7 @@ import { slideInFromTop } from '@/utils/motion'
 import { motion } from 'framer-motion'
 
 const Skills = () => {
-  const BOXWIDTH = 120;
+  const BOXWIDTH = 130;
   const BOXHEIGHT = 120;
 
   return (
@@ -36,7 +36,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Programming Languages
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
+      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
         {Language.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -53,7 +53,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Web Development
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
+      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -70,7 +70,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Frameworks
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
+      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
         {Framework.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -87,7 +87,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Databases
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
+      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
         {Database.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -104,7 +104,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Game Engines
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
+      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
         {Game_engine.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -121,7 +121,7 @@ const Skills = () => {
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
         Developer Tools
       </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 md:gap-10 items-center py-6">
+      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
         {Tool.map((image, index) => (
           <SkillDataProvider
             key={index}

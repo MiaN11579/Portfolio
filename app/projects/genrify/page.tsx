@@ -14,7 +14,7 @@ export default function genrify({ }: Props) {
 
   return (
     <div>
-      <div className='flex flex-col relative items-center justify-center page-padding z-40'>
+      <div className='flex flex-col relative items-center justify-center project-padding z-40'>
         <motion.div
           initial='hidden'
           animate='visible'
@@ -29,7 +29,7 @@ export default function genrify({ }: Props) {
           initial="hidden"
           animate='visible'
           variants={slideInFromBottom(0.25)}
-          className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-10 py-10 mb-20'
+          className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-20 py-10 mb-20'
         >
           <p
             className='mt-4 text-gray-400 text-[15px] md:text-[17px] whitespace-pre-wrap'>
