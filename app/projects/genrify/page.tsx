@@ -29,7 +29,7 @@ export default function genrify({ }: Props) {
           initial="hidden"
           animate='visible'
           variants={slideInFromBottom(0.25)}
-          className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-20 py-10 mb-20'
+          className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-20 py-10 mb-10'
         >
           <p
             className='mt-4 text-gray-400 text-[15px] md:text-[17px] whitespace-pre-wrap'>
@@ -53,6 +53,8 @@ export default function genrify({ }: Props) {
         </div>
 
         <motion.p
+          initial="hidden"
+          animate='visible'
           variants={slideInFromLeft(0.75)}
           className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] mb-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper auctor placerat. Suspendisse maximus sem ac purus rhoncus, ac lacinia felis faucibus. Donec vel dapibus sem. Sed sit amet nulla lectus. Nam eget neque sit amet augue elementum pretium ac vel augue. Donec maximus fermentum porttitor. Nulla non aliquam velit, rhoncus pretium libero. Nam vel ex eros.
 

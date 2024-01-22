@@ -38,7 +38,7 @@ export const HeroContent = () => {
 
                     <motion.p
                         variants={slideInFromLeft(0.75)}
-                        className='text lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  text-1xl md:text-4xl lg:text-5xl my-8 max-w-[1000px]'>
+                        className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  text-1xl md:text-4xl lg:text-5xl my-8 max-w-[1000px]'>
                         A <span className='text-white'>Software Developer</span> who loves to solve <span className='text-white'>challenging problems</span> and work on <span className='text-white'>fun projects</span>.
                     </motion.p>
 
