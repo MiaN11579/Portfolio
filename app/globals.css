@@ -59,6 +59,10 @@
   display: none;
 }
 
+.max-w-screen {
+  max-width: 2200px;
+}	
+
 .gap-1 {
   gap: 0.4rem;
 }

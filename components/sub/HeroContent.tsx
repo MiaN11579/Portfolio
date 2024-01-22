@@ -12,11 +12,11 @@ export const HeroContent = () => {
     };
 
     return (
-        <div>
+        <div className='flex flex-col items-center justify-center'>
             <motion.div
-                initial='hidden'
+                initial='hidden'    
                 animate='visible'
-                className='relative flex flex-col md:flex-row items-center justify-center page-padding mt-40 mb-20 w-full z-40'>
+                className='relative flex flex-col md:flex-row items-center justify-center page-padding mt-40 mb-20 w-full max-w-screen z-40'>
                 <div className='h-full w-full flex flex-col gap-6 justify-center m-auto text-start'>
                     <motion.div
                         variants={slideInFromTop(0.25)}
@@ -55,7 +55,7 @@ export const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromRight(1.25)}
-                    className='w-full h-full flex justify-center items-center'>
+                    className='w-full h-full flex justify-right items-center'>
                     <Avatar src='/avatar.jpg' alt='work icons' size={450} />
                 </motion.div>
             </motion.div>
