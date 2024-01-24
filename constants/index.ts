@@ -229,41 +229,44 @@ export const Tool = [
   },
 ];
 
-export const Genrify = [
+export const Shadebound = [
   {
-    skill_name: "Html 5",
-    Image: "/html.png",
-    width: 90,
-    height: 90,
-  },
-  {
-    skill_name: "Css",
-    Image: "/css.png",
-    width: 105,
-    height: 105,
-  },
-  {
-    skill_name: "JavaScript",
-    Image: "/js.png",
-    width: 75,
-    height: 75,
-  },
-  {
-    skill_name: "Node.js",
-    Image: "/node-js.png",
-    width: 75,
-    height: 75,
-  },
-  {
-    skill_name: "Bootstrap",
-    Image: "/bootstrap.png",
+    skill_name: "C++",
+    Image: "/c++.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "MongoDB",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
+    skill_name: "SFML",
+    Image: "/sfml.png",
+    width: 85,
+    height: 85,
+  },
+  {
+    skill_name: "Visual Studio",
+    Image: "/visual_studio.png",
+    width: 75,
+    height: 75,
+  },
+];
+
+export const Starcraft = [
+  {
+    skill_name: "C++",
+    Image: "/c++.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "BWAPI API",
+    Image: "/bwapi.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Visual Studio",
+    Image: "/visual_studio.png",
+    width: 75,
+    height: 75,
   },
 ];

@@ -16,8 +16,8 @@ export const HeroContent = () => {
             <motion.div
                 initial='hidden'    
                 animate='visible'
-                className='relative flex flex-col md:flex-row items-center justify-center page-padding mt-40 mb-20 w-full max-w-screen z-40'>
-                <div className='h-full w-full flex flex-col gap-6 justify-center m-auto text-start'>
+                className='relative flex flex-col md:grid md:grid-cols-3 md:gap-4 items-center justify-center page-padding mt-40 mb-20 w-full max-w-screen z-40'>
+                <div className='h-full w-full flex flex-col md:col-span-2 gap-6 justify-center m-auto text-start'>
                     <motion.div
                         variants={slideInFromTop(0.25)}
                         className='Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]'
@@ -55,7 +55,7 @@ export const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromRight(1.25)}
-                    className='w-full h-full flex justify-right items-center'>
+                    className='w-full h-full flex justify-center md:justify-right items-center'>
                     <Avatar src='/avatar.jpg' alt='work icons' size={450} />
                 </motion.div>
             </motion.div>

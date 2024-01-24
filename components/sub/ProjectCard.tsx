@@ -40,7 +40,7 @@ const ProjectCard = ({ src, title, description, github, link, readmore }: Props)
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%'}}
+            style={{ width: '100%' }}
           />
           {isHovered && (
             <div className='overlay'>
@@ -57,16 +57,18 @@ const ProjectCard = ({ src, title, description, github, link, readmore }: Props)
                     </a>
                   )}
                 </div>
-                <div className='read-more-button px-[20px] py-[10px]'>
-                  <a href={readmore} className='cursor-pointer'>Read more</a>
-                </div>
+                {readmore && (
+                  <div className='read-more-button px-[20px] py-[10px] lg:mt-10 lg:text-xl'>
+                    <a href={readmore} className='cursor-pointer'>Read more</a>
+                  </div>
+                )}
               </div>
             </div>
           )}
         </div>
 
         <div className='p-4'>
-          <h1 className='text-1xl md:text-2xl lg:text-4xl font-semibold text-white'>{title}</h1>
+          <h1 className='text-xl md:text-2xl lg:text-4xl font-semibold text-white'>{title}</h1>
           <p className='lg:text-2xl pt-2 text-gray-300'>{description}</p>
         </div>
       </div>

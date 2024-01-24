@@ -1,6 +1,6 @@
 "use client"
 
-import { Genrify } from "@/constants";
+import { Shadebound } from "@/constants";
 import React from "react";
 import { slideInFromTop, slideInFromBottom, slideInFromLeft } from '@/utils/motion'
 import { motion } from 'framer-motion'
@@ -9,19 +9,19 @@ import SkillDataProvider from "@/components/sub/SkillDataProvider";
 type Props = {}
 
 export default function genrify({ }: Props) {
-  const BOXWIDTH = 100;
+  const BOXWIDTH = 120;
   const BOXHEIGHT = 90;
 
   return (
     <div>
-      <div className='flex flex-col relative items-center justify-center project-padding z-40'>
+      <div className='flex flex-col relative items-center project-padding z-40'>
         <motion.div
           initial='hidden'
           animate='visible'
           variants={slideInFromTop(0.25)}
         >
           <h1 className='text-[30px] md:text-[50px] lg:text-[70px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pt-20 pb-10'>
-            Genrify
+            Shadebound
           </h1>
         </motion.div>
 
@@ -33,12 +33,12 @@ export default function genrify({ }: Props) {
         >
           <p
             className='mt-4 text-gray-400 text-[15px] md:text-[17px] whitespace-pre-wrap'>
-            Spotify random playlist generator based on genres and sub-genres of music. Made with MongoDB, Node.js, Bootstrap, and Spotify API.
+            An action-adventure game with fantasty theme made from scratch with C++ and SFML.
           </p>
         </motion.div>
 
         <div className="flex flex-row justify-center flex-wrap items-center">
-          {Genrify.map((image, index) => (
+          {Shadebound.map((image, index) => (
             <SkillDataProvider
               key={index}
               name={image.skill_name}

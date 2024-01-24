@@ -35,15 +35,15 @@ const Projects = () => {
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=549-b2WlWQA'
                         github='https://github.com/MiaN11579/CalorX'
-                        readmore='/projects/calorx'
+                        readmore=''
                         src="/calorX.jpg"
                         title="CalorX - Calorie Tracker App"
-                        description="A calorie tracker app made with Flutter, Firebase, and FoodData Central API."
+                        description="A user-friendly calorie tracking CRUD app made with Flutter, Firebase, and FoodData Central API."
                     />
                     <ProjectCard
                         link='https://genrify-app.herokuapp.com/'
                         github='https://github.com/dchicasduena/genrify'
-                        readmore='/projects/genrify'
+                        readmore=''
                         src="/genrify.png"
                         title="Genrify - Spotify Playlist Generator"
                         description="Spotify random playlist generator based on genres and sub-genres of music. Made with MongoDB, Node.js, Bootstrap, and Spotify API."
@@ -62,7 +62,7 @@ const Projects = () => {
                     <ProjectCard
                         link='https://walkerneo.itch.io/owlets-adventure'
                         github='https://github.com/MiaN11579/Owlet-Adventure'
-                        readmore='/projects/owlet'
+                        readmore=''
                         src="/owl_adventure.png"
                         title="Owlet's Adventure - 2D Platformer"
                         description="A simple platformer with pixel art style made with Godot. This is my first game project ever so it's not perfect, but I'm proud of it nonetheless!"
@@ -70,7 +70,7 @@ const Projects = () => {
                     <ProjectCard
                         link='https://mian11579.github.io/Library/'
                         github='https://github.com/MiaN11579/Library'
-                        readmore='/projects/library'
+                        readmore=''
                         src="/library.png"
                         title="Personal Library"
                         description="A library web app that keeps track of books you read, made with HTML, CSS and JS. This is a project from The Odin Project's curriculum."
