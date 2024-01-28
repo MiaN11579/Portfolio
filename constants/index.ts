@@ -239,8 +239,14 @@ export const Shadebound = [
   {
     skill_name: "SFML",
     Image: "/sfml.png",
-    width: 85,
-    height: 85,
+    width: 90,
+    height: 90,
+  },
+  {
+    skill_name: "ImGui",
+    Image: "/imgui.png",
+    width: 100,
+    height: 100,
   },
   {
     skill_name: "Visual Studio",
