@@ -15,7 +15,7 @@ const NavBar = () => {
 
                 <div className='w-[270px] md:w-[500px] lg:w-[700px] h-full flex flex-row items-center justify-between'>
                     <div className='flex items-center justify-between w-full h-auto bg-[#0300145e] px-[10px] md:px-[20px] py-[10px] rounded-full text-gray-200'>
-                        <a onClick={onClickAbout.bind(this)} className='cursor-pointer nav-button text-opacity-0'>About Me</a>
+                        <a onClick={onClickAbout.bind(this)} className='cursor-pointer nav-button'>About Me</a>
                         <a onClick={onClickExperience.bind(this)} className='cursor-pointer nav-button'>Experience</a>
                         <a onClick={onClickSkills.bind(this)} className='cursor-pointer nav-button'>Skills</a>
                         <a onClick={onClickProjects.bind(this)} className='cursor-pointer nav-button'>Projects</a>

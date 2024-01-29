@@ -42,10 +42,11 @@
   padding-bottom: 0.6rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  transition: transform 0.2s;
 }
 
 .button-primary:hover {
-  border: 2px solid #fff;
+  transform: scale(1.1);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
