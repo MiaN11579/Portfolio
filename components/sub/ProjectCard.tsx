@@ -58,7 +58,7 @@ const ProjectCard = ({ src, title, description, github, link, readmore }: Props)
                   )}
                 </div>
                 {readmore && (
-                  <div className='read-more-button px-[20px] py-[10px] lg:mt-10 lg:text-xl'>
+                  <div className='read-more-button px-[20px] py-[10px] md:mt-6 lg:mt-10 lg:text-xl'>
                     <a href={readmore} className='cursor-pointer'>Read more</a>
                   </div>
                 )}

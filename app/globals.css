@@ -186,14 +186,14 @@
 
 .fa-square-github {
   color: #ffffff;
-  scale: 2.6;
+  scale: 3.6;
   transition: transform 0.2s ease-in-out;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .fa-arrow-up-right-from-square {
   color: #ffffff;
-  scale: 2.3;
+  scale: 3.3;
   transition: transform 0.1s ease-in-out;
 }
 
@@ -280,6 +280,15 @@
   .project-card{
     min-height: 350px;
   }
+
+  .fa-square-github {
+    scale: 2.6;
+    margin-right: 40px;
+  }
+  
+  .fa-arrow-up-right-from-square {
+    scale: 2.3;
+  }
 }
 
 @media screen and (min-width: 2200px) {
@@ -304,12 +313,12 @@
   }
 
   .fa-square-github {
-    scale: 3.6;
-    margin-right: 50px;
+    scale: 4.3;
+    margin-right: 65px;
   }
   
   .fa-arrow-up-right-from-square {
-    scale: 3.3;
+    scale: 4;
   }
 }
 
