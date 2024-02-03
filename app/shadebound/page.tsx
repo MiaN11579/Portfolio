@@ -56,7 +56,7 @@ export default function genrify({ }: Props) {
         <motion.div
           initial="hidden"
           animate='visible'
-          variants={slideInFromLeft(0.75)}
+          variants={slideInFromLeft(0.5)}
           className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] indent-8'>
           <p className='mb-8'>
             This project contains three levels that players can move through and can revisit the level once completed. Each level offers a unique map, with mobs varying from level to level,
@@ -83,7 +83,7 @@ export default function genrify({ }: Props) {
             You as the hero have multiple methods and ways you can complete your journey and defeat the final boss. In your possession are two weapons; a golden sword which you can use
             to directly attack your enemies, facing them in one-on-one combat, or the golden bow, which you can use to attack at a distance, while the ammo lasts. But beware: some enemies
             are sharper than they seem, and will follow you seeking revenge. But you can be faster. Dashing, wall-jumping and double-jumping, you can parkour through each platform and right
-            above enemies' shoulders and swiftly take them down.
+            above enemies&rsquo; shoulders and swiftly take them down.
           </p>
           <Image
             src={"/shadebound_gameover.png"}
@@ -98,7 +98,7 @@ export default function genrify({ }: Props) {
         <motion.div
           initial="hidden"
           animate='visible'
-          variants={slideInFromLeft(0.75)}
+          variants={slideInFromLeft(1)}
           className='text-white text-1xl md:text-1xl mb-8 max-w-[1000px] indent-8'>
           <p className='mb-8'>
             Say you take an arrow to the knee, notching down your health and making you one step closer to &apos;Game Over&apos;, use the coins you collected throughout the maps to purchase items and
@@ -121,7 +121,7 @@ export default function genrify({ }: Props) {
         <motion.p
           initial="hidden"
           animate='visible'
-          variants={slideInFromLeft(0.75)}
+          variants={slideInFromLeft(1.25)}
           className='text-white text-1xl md:text-1xl mb-8 max-w-[1000px] indent-8'>
           Customize and play your way. Be the hero you were meant to be, in Shadebound.
         </motion.p>
