@@ -27,7 +27,7 @@ const Projects = () => {
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Sdq8twxePco'
                         github=''
-                        readmore='/projects/shadebound'
+                        readmore='/shadebound'
                         src="/shadebound.png"
                         title="Shadebound - Fantasy 2D Platformer"
                         description="An action-adventure game with fantasty theme made from scratch with C++ and SFML."
@@ -53,7 +53,7 @@ const Projects = () => {
                     <ProjectCard
                         link='https://www.youtube.com/watch?v=Z_p-ZlnlAR0'
                         github=''
-                        readmore='/projects/starcraft'
+                        readmore='/starcraft'
                         src="/starcraft.png"
                         title="Starcraft AI Bot"
                         description="A Terran bot that fights against the built-in StarCraft Broodwar Bot using a good general-purpose strategy

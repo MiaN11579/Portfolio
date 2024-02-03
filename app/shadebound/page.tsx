@@ -33,7 +33,7 @@ export default function genrify({ }: Props) {
         >
           <p
             className='mt-4 text-gray-400 text-[15px] md:text-[17px] whitespace-pre-wrap'>
-            An action-adventure game with fantasty theme made from scratch with C++ and SFML.
+            Shadebound is a pixel-style 2D fantasty-action platformer game, where you play as a brave warrior on an excursion to defeat the almighty dragon, the final boss who controls the world...and win!
           </p>
         </motion.div>
 
@@ -56,9 +56,43 @@ export default function genrify({ }: Props) {
           initial="hidden"
           animate='visible'
           variants={slideInFromLeft(0.75)}
-          className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] mb-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper auctor placerat. Suspendisse maximus sem ac purus rhoncus, ac lacinia felis faucibus. Donec vel dapibus sem. Sed sit amet nulla lectus. Nam eget neque sit amet augue elementum pretium ac vel augue. Donec maximus fermentum porttitor. Nulla non aliquam velit, rhoncus pretium libero. Nam vel ex eros.
+          className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] indent-8'>
+          This project contains three levels that players can move through and can revisit the level once completed. Each level offers a unique map, with mobs varying from level to level,
+          with the final boss, the dragon, met at the end of the final level. To keep things interesting and challenging yourself, we implemented a difficulty setting,
+          for novice players to understand and ease into the game and keep gaming enthusiasts challenged and engaged. Players can create their own challenges as well.
+          With the Level Editor, players can customize each level to be as tame or wild as they wish, never leaving a dull moment.
+        </motion.p>
 
-          Aliquam nec mi scelerisque, feugiat mauris ultrices, commodo tellus. Mauris at sapien ultricies, aliquam velit sit amet, aliquam ex. Mauris tempor, libero vel venenatis placerat, libero nibh lobortis nisi, vitae placerat nisl quam at sapien. Aenean leo orci, tristique a vulputate in, bibendum quis arcu. Maecenas luctus finibus magna. Aenean scelerisque feugiat enim ac auctor. Donec sit amet quam id dolor euismod fermentum a eget justo. Duis finibus mi non gravida aliquet. Suspendisse id lobortis enim, quis molestie sapien. Sed cursus erat non dui porttitor varius. Nulla rutrum felis nec lorem rhoncus porttitor.
+        <motion.p
+          initial="hidden"
+          animate='visible'
+          variants={slideInFromLeft(0.75)}
+          className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] indent-8'>
+          You as the hero have multiple methods and ways you can complete your journey and defeat the final boss. In your possession are two weapons; a golden sword which you can use
+          to directly attack your enemies, facing them in one-on-one combat, or the golden bow, which you can use to attack at a distance, while the ammo lasts. But beware: some enemies
+          are sharper than they seem, and will follow you seeking revenge. But you can be faster. Dashing, wall-jumping and double-jumping, you can parkour through each platform and right
+          above enemies' shoulders and swiftly take them down.
+        </motion.p>
+
+        <motion.p
+          initial="hidden"
+          animate='visible'
+          variants={slideInFromLeft(0.75)}
+          className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] indent-8'>
+          Say you take an arrow to the knee, notching down your health and making you one step closer to "Game Over", use the coins you collected throughout the maps to purchase items and
+          potions through the Shadebound Shop, and keep them for when you need. You can stock up on health packs and regain your HP, a sprint potion to boost your speed despite the weak
+          knees, and plot out your revenge with the full map scroll, which allows you to see where all those who oppose you loiter, even beyond the mini-map of the local area. Once you are
+          faced with the mobs, you can use a potion of slowness to make them sluggish to your attacks, or you can leave them confused, blind and unable to attack with the smoke bomb. If 
+          you feel particularly vengeful, you can fill up on the Quad-Damage potion to bludgeon your enemies to dust. All these tools and potions are locally sourced and conveniently 
+          available at anytime right at the Shadebound Shop.
+        </motion.p>
+
+        <motion.p
+          initial="hidden"
+          animate='visible'
+          variants={slideInFromLeft(0.75)}
+          className='text-white text-1xl md:text-1xl my-8 max-w-[1000px] indent-8'>
+          Customize and play your way. Be the hero you were meant to be, in Shadebound.
         </motion.p>
       </div>
     </div>
