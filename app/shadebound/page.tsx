@@ -61,6 +61,8 @@ export default function genrify({ }: Props) {
           with the final boss, the dragon, met at the end of the final level. To keep things interesting and challenging yourself, we implemented a difficulty setting,
           for novice players to understand and ease into the game and keep gaming enthusiasts challenged and engaged. Players can create their own challenges as well.
           With the Level Editor, players can customize each level to be as tame or wild as they wish, never leaving a dull moment.
+          <br />
+          <img src="/shadebound1.png" alt="" />
         </motion.p>
 
         <motion.p
@@ -72,6 +74,8 @@ export default function genrify({ }: Props) {
           to directly attack your enemies, facing them in one-on-one combat, or the golden bow, which you can use to attack at a distance, while the ammo lasts. But beware: some enemies
           are sharper than they seem, and will follow you seeking revenge. But you can be faster. Dashing, wall-jumping and double-jumping, you can parkour through each platform and right
           above enemies' shoulders and swiftly take them down.
+          <br />
+          <img src="/shadebound_gameover.png" alt="" />
         </motion.p>
 
         <motion.p
@@ -82,8 +86,8 @@ export default function genrify({ }: Props) {
           Say you take an arrow to the knee, notching down your health and making you one step closer to "Game Over", use the coins you collected throughout the maps to purchase items and
           potions through the Shadebound Shop, and keep them for when you need. You can stock up on health packs and regain your HP, a sprint potion to boost your speed despite the weak
           knees, and plot out your revenge with the full map scroll, which allows you to see where all those who oppose you loiter, even beyond the mini-map of the local area. Once you are
-          faced with the mobs, you can use a potion of slowness to make them sluggish to your attacks, or you can leave them confused, blind and unable to attack with the smoke bomb. If 
-          you feel particularly vengeful, you can fill up on the Quad-Damage potion to bludgeon your enemies to dust. All these tools and potions are locally sourced and conveniently 
+          faced with the mobs, you can use a potion of slowness to make them sluggish to your attacks, or you can leave them confused, blind and unable to attack with the smoke bomb. If
+          you feel particularly vengeful, you can fill up on the Quad-Damage potion to bludgeon your enemies to dust. All these tools and potions are locally sourced and conveniently
           available at anytime right at the Shadebound Shop.
         </motion.p>
 
