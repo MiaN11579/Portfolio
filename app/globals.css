@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -61,7 +61,7 @@
 
 .max-w-screen {
   max-width: 2200px;
-}	
+}
 
 .gap-1 {
   gap: 0.4rem;
@@ -82,33 +82,33 @@
   min-height: 100vh;
 }
 
-.bg-gradient-to-b{
+.bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.from-a{
+.from-a {
   --tw-gradient-from: #030014 var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(34, 67, 255, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-b{
+.to-b {
   --tw-gradient-to: #313aa5 var(--tw-gradient-to-position);
 }
 
-.img-container{
+.img-container {
   display: inline-block;
   position: relative;
 }
 
-.experience-card{
+.experience-card {
   background-color: #130d5eab;
   border-radius: 2rem;
   height: auto;
   max-width: 1600px;
 }
 
-.project-card{
+.project-card {
   background-color: #00000053;
   border-radius: 2rem;
   transform: scale(1);
@@ -124,7 +124,7 @@
   transition: transform 0.2s;
 }
 
-.avatar-wrapper{
+.avatar-wrapper {
   border-radius: 50%;
   overflow: hidden;
   border: 10px solid #313aa5;
@@ -132,13 +132,13 @@
   height: 400px;
 }
 
-.avatar-image{
+.avatar-image {
   width: 100%;
   height: 100%;
   transform: translate3d(0px, 0px, 0.1px);
 }
 
-.justify-right{
+.justify-right {
   justify-content: right;
 }
 
@@ -168,13 +168,17 @@
   transform: scale(1.1);
 }
 
-.fa-github, .fa-linkedin, .fa-envelope {
+.fa-github,
+.fa-linkedin,
+.fa-envelope {
   color: #ffffff;
   scale: 1.25;
   transition: transform 0.4s ease-in-out;
 }
 
-.fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover {
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-envelope:hover {
   color: #06b6d4;
   transform: rotateY(360deg) scale(1.5);
 }
@@ -197,7 +201,8 @@
   transition: transform 0.1s ease-in-out;
 }
 
-.fa-square-github:hover, .fa-arrow-up-right-from-square:hover{
+.fa-square-github:hover,
+.fa-arrow-up-right-from-square:hover {
   color: #06b6d4;
   transform: scale(1.1);
 }
@@ -231,7 +236,8 @@
   border: 1px solid #06b6d4;
 }
 
-.contact-input:focus, contact-input.form-control:focus {
+.contact-input:focus,
+contact-input.form-control:focus {
   border: 1px solid #0655d4;
 }
 
@@ -267,6 +273,10 @@
     padding-left: 3rem;
     padding-right: 3rem;
   }
+  .project-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
   .nav-button {
     font-size: 10px;
   }
@@ -274,10 +284,12 @@
     width: 250px;
     height: 250px;
   }
-  .fa-github, .fa-linkedin, .fa-envelope {
+  .fa-github,
+  .fa-linkedin,
+  .fa-envelope {
     scale: 0.8;
   }
-  .project-card{
+  .project-card {
     min-height: 350px;
   }
 
@@ -285,7 +297,7 @@
     scale: 2.6;
     margin-right: 40px;
   }
-  
+
   .fa-arrow-up-right-from-square {
     scale: 2.3;
   }
@@ -306,7 +318,9 @@
     width: 550px;
     height: 550px;
   }
-  .fa-github, .fa-linkedin, .fa-envelope {
+  .fa-github,
+  .fa-linkedin,
+  .fa-envelope {
     color: #ffffff;
     scale: 1.5;
     transition: transform 0.4s ease-in-out;
@@ -316,12 +330,11 @@
     scale: 4.3;
     margin-right: 65px;
   }
-  
+
   .fa-arrow-up-right-from-square {
     scale: 4;
   }
 }
-
 
 html {
   scroll-behavior: smooth;

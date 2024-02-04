@@ -30,7 +30,7 @@ export default function genrify({ }: Props) {
           initial="hidden"
           animate='visible'
           variants={slideInFromBottom(0.25)}
-          className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-20 py-10 mb-10'
+          className='experience-card flex flex-wrap w-full relative overflow-hidden shadow-lg px-6 md:px-20 py-4 md:py-10 mb-10'
         >
           <p
             className='mt-4 text-gray-400 text-[15px] md:text-[17px] whitespace-pre-wrap'>
