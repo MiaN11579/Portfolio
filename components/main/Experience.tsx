@@ -39,7 +39,7 @@ class Experience extends Component<Props, State> {
                 </motion.h1>
                 <div className='h-full w-full items-center justify-center flex flex-col gap-10 md:px-20 z-[30] '>
                     <ExperienceCard
-                        title='Contract WordPress Developer'
+                        title='Freelance WordPress Developer'
                         company='Frankensolar Americas Inc.'
                         date='July 2023 – August 2023'
                         location=' Brampton, ON'
