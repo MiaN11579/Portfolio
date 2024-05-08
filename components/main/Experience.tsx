@@ -15,7 +15,7 @@ class Experience extends Component<Props, State> {
     render() {
 
         const Frankensolar = 
-        `• Collaborated with development team to redesign and implement new features for the company’s website, enhancing user experience and supports business goals by effectively showcases their products and services.
+        `• Collaborated with development team to redesign and implement new features for the company’s website, enhancing user experience and supporting business goals by effectively showcases their products and services.
 • Utilized web scraping to extract and display relevant product information and images from the company’s external website.
 • Developed a custom WordPress plugin to enable advanced filtering of posts based on custom taxonomies.`
         const Zorbit = 
@@ -46,7 +46,7 @@ class Experience extends Component<Props, State> {
                         description={Frankensolar}
                     />
                     <ExperienceCard
-                        title='Game Developer Work Term Student'
+                        title='Game Developer'
                         company='Zorbit’s Math Adventure'
                         date='May 2022 – April 2023'
                         location=' St. John’s, NL'
