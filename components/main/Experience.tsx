@@ -14,6 +14,11 @@ class Experience extends Component<Props, State> {
     state = {}
     render() {
 
+        const Sago =
+            `• Make significant contributions to the development of multiple Sago Mini games, focusing on creating engaging and interactive experiences for young kids.
+• Collaborate closely with designers, artists, and other developers to bring game concepts to life, ensuring a seamless integration of art and functionality.
+• Implement game mechanics, user interfaces, and interactive features using Unity and C#.
+• Participate in code reviews, testing, and debugging to ensure high-quality and bug-free releases.`
         const Frankensolar = 
         `• Collaborated with development team to redesign and implement new features for the company’s website, enhancing user experience and supporting business goals by effectively showcases their products and services.
 • Utilized web scraping to extract and display relevant product information and images from the company’s external website.
@@ -38,6 +43,13 @@ class Experience extends Component<Props, State> {
                     My Experience
                 </motion.h1>
                 <div className='h-full w-full items-center justify-center flex flex-col gap-10 md:px-20 z-[30] '>
+                    <ExperienceCard
+                        title='Unity Game Developer'
+                        company='Sago Mini'
+                        date='May 2024 - Present'
+                        location=' Toronto, ON'
+                        description={Sago}
+                    />
                     <ExperienceCard
                         title='Freelance WordPress Developer'
                         company='Frankensolar Americas Inc.'

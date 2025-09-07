@@ -133,7 +133,7 @@ export const Language = [
   },
 ];
 
-export const Framework = [
+export const FrameworkDatabase = [
   {
     skill_name: "Flutter",
     Image: "/flutter.png",
@@ -158,24 +158,6 @@ export const Framework = [
     width: 80,
     height: 80,
   },
-];
-
-export const Game_engine = [
-  {
-    skill_name: "Godot",
-    Image: "/godot.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Unity",
-    Image: "/unity.png",
-    width: 80,
-    height: 80,
-  },
-];
-
-export const Database = [
   {
     skill_name: "MongoDB",
     Image: "/mongodb.png",
@@ -191,6 +173,21 @@ export const Database = [
   {
     skill_name: "MySQL",
     Image: "/mysql.png",
+    width: 80,
+    height: 80,
+  },
+];
+
+export const Game_engine = [
+  {
+    skill_name: "Godot",
+    Image: "/godot.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Unity",
+    Image: "/unity.png",
     width: 80,
     height: 80,
   },

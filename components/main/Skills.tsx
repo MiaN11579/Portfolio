@@ -2,8 +2,7 @@
 
 import {
   Language,
-  Database,
-  Framework,
+  FrameworkDatabase,
   Frontend_skill,
   Game_engine,
   Tool,
@@ -68,27 +67,10 @@ const Skills = () => {
         ))}
       </div>
       <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-        Frameworks
+        Frameworks & Databases
       </h1>
       <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
-        {Framework.map((image, index) => (
-          <SkillDataProvider
-            key={index}
-            name={image.skill_name}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-            boxWidth={BOXWIDTH}
-            boxHeight={BOXHEIGHT}
-          />
-        ))}
-      </div>
-      <h1 className='text-[20px] md:text-[30px] lg:text-[45px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-        Databases
-      </h1>
-      <div className="flex flex-row justify-center flex-wrap gap-5 lg:gap-10 items-center py-6">
-        {Database.map((image, index) => (
+        {FrameworkDatabase.map((image, index) => (
           <SkillDataProvider
             key={index}
             name={image.skill_name}

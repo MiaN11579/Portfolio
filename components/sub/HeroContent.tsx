@@ -39,7 +39,9 @@ export const HeroContent = () => {
                     <motion.p
                         variants={slideInFromLeft(0.75)}
                         className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500  text-1xl md:text-4xl lg:text-5xl my-8 max-w-[1000px]'>
-                        A <span className='text-white'>Software Developer who</span> loves to solve <span className='text-white'>challenging problems and work on</span> fun<span className='text-white'> projects</span>.
+                        <span className='text-white'>A </span>Software Developer<span className='text-white'> who</span> loves to solve
+                        <span className='text-white'> challenging problems and work on</span> fun
+                        <span className='text-white'> projects. Let's </span>connect<span className='text-white'>!</span>
                     </motion.p>
 
                     <motion.a
